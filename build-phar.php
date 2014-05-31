@@ -1,14 +1,19 @@
 <?php
 
-$buildRoot = "./bin";
+if (!empty($argv[1])) {
+    $buildRoot = $argv[1];
+} else {
+    $buildRoot = "./bin";
+}
+
 $applicationName = 'hooker';
 
 $phar = new Phar(
     $buildRoot . "/$applicationName.phar"
 );
 
-$phar->buildFromDirectory(dirname(__FILE__));
-
+// build from the root directory but exclude any phar files
+$phar->buildFromDirectory(dirname(__FILE__), "/.+(?<!phar)$/i");
 
 // create stub that allows direct commandline usage
 $stub = <<<EOT
