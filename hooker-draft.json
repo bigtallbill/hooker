@@ -13,9 +13,7 @@
     "contentIgnoreUrls": true,
     "lineAfterSummaryMustBeBlank": true,
     "scripts": {
-      "afterBuiltIn": {
-        "checkSpelling": {"name": "chkSpelling.php"}
-      }
+      "after": ["chkSpelling.php"]
     }
   }
 }
