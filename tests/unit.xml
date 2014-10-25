@@ -4,7 +4,7 @@
 	processIsolation="false">
 	<logging>
         <log type="coverage-html" target="report"/>
-        <log type="coverage-clover" target="build/logs/clover.xml"/>
+        <log type="coverage-clover" target="../build/logs/clover.xml"/>
 	</logging>
 	<!-- override php ini settings -->
 	<php>
