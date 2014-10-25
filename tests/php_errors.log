@@ -1,0 +1,152 @@
+[28-Jul-2014 00:04:18 UTC] PHP Fatal error:  Declaration of MarketMeSuite\Core\Augments\AAugmentBase::setConfig() must be compatible with that of MarketMeSuite\Core\Config\IConfigUser::setConfig() in /Volumes/REPOS/MMS-BASE-PHP/MarketMeSuite/Core/Augments/AAugmentBase.php on line 19
+[28-Jul-2014 00:34:12 UTC] PHP Fatal error:  Declaration of MarketMeSuite\Shorty\Shorty::setConfig() must be compatible with that of MarketMeSuite\Core\Config\IConfigUser::setConfig() in /Volumes/REPOS/MMS-BASE-PHP/MarketMeSuite/Shorty/Shorty.php on line 22
+[01-Aug-2014 18:34:25 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 76 bytes) in /Volumes/REPOS/MMS-BASE-PHP/MarketMeSuite/Core/Objects/Job.php on line 68
+[01-Aug-2014 18:34:25 UTC] PHP Stack trace:
+[01-Aug-2014 18:34:25 UTC] PHP   1. {main}() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/phpunit:0
+[01-Aug-2014 18:34:25 UTC] PHP   2. PHPUnit_TextUI_Command::main() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/phpunit:55
+[01-Aug-2014 18:34:25 UTC] PHP   3. PHPUnit_TextUI_Command->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+[01-Aug-2014 18:34:25 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+[01-Aug-2014 18:34:25 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:426
+[01-Aug-2014 18:34:25 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestSuite.php:675
+[01-Aug-2014 18:34:25 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestSuite.php:675
+[01-Aug-2014 18:34:25 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:758
+[01-Aug-2014 18:34:25 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestResult.php:686
+[01-Aug-2014 18:34:25 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:822
+[01-Aug-2014 18:34:25 UTC] PHP  11. ReflectionMethod->invokeArgs() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:956
+[01-Aug-2014 18:34:25 UTC] PHP  12. MarketMeSuite\Lamba\DistributorTest->testDistribute() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:956
+[01-Aug-2014 18:34:25 UTC] PHP  13. MarketMeSuite\Lamba\Distributor->distribute() /Volumes/REPOS/MMS-BASE-PHP/tests/tests/Lamba/DistributorTest.php:179
+[01-Aug-2014 18:34:25 UTC] PHP  14. MarketMeSuite\Core\Objects\AObjectBase->setProp() /Volumes/REPOS/MMS-BASE-PHP/MarketMeSuite/Lamba/Distributor.php:69
+[01-Aug-2014 18:34:25 UTC] PHP  15. MarketMeSuite\Phranken\Database\Object\DbObject->setProp() /Volumes/REPOS/MMS-BASE-PHP/MarketMeSuite/Core/Objects/AObjectBase.php:508
+[01-Aug-2014 18:34:25 UTC] PHP  16. MarketMeSuite\Core\Objects\Job->getMap() /Volumes/REPOS/MMS-BASE-PHP/MarketMeSuite/Phranken/Database/Object/DbObject.php:210
+[01-Aug-2014 19:58:32 UTC] PHP Warning:  Uncaught exception 'PHPUnit_Framework_Error_Notice' with message 'Undefined variable: dist' in /Volumes/REPOS/MMS-BASE-PHP/tests/tests/Lamba/DistributorTest.php:137
+Stack trace:
+#0 /Volumes/REPOS/MMS-BASE-PHP/tests/tests/Lamba/DistributorTest.php(137): PHPUnit_Util_ErrorHandler::handleError(8, 'Undefined varia...', '/Volumes/REPOS/...', 137, Array)
+#1 [internal function]: MarketMeSuite\Lamba\DistributorTest->testGetWorkersProbability()
+#2 /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php(956): ReflectionMethod->invokeArgs(Object(MarketMeSuite\Lamba\DistributorTest), Array)
+#3 /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php(822): PHPUnit_Framework_TestCase->runTest()
+#4 /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestResult.php(686): PHPUnit_Framework_TestCase->runBare()
+#5 /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php(758): PHPUnit_Framework_TestResult->run(Object(MarketMeSuite\Lamba\DistributorTest) in /Volumes/REPOS/MMS-BASE-PHP/tests/tests/Lamba/DistributorTest.php on line 137
+[01-Aug-2014 19:58:32 UTC] PHP Stack trace:
+[01-Aug-2014 19:58:32 UTC] PHP   1. {main}() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/phpunit:0
+[01-Aug-2014 19:58:32 UTC] PHP   2. PHPUnit_TextUI_Command::main() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/phpunit:55
+[01-Aug-2014 19:58:32 UTC] PHP   3. PHPUnit_TextUI_Command->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+[01-Aug-2014 19:58:32 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+[01-Aug-2014 19:58:32 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:426
+[01-Aug-2014 19:58:32 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestSuite.php:675
+[01-Aug-2014 19:58:32 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestSuite.php:675
+[01-Aug-2014 19:58:32 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:758
+[01-Aug-2014 19:58:32 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestResult.php:686
+[01-Aug-2014 19:58:32 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:822
+[01-Aug-2014 19:58:32 UTC] PHP  11. ReflectionMethod->invokeArgs() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:956
+[01-Aug-2014 19:58:32 UTC] PHP  12. MarketMeSuite\Lamba\DistributorTest->testGetWorkersProbability() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:956
+[01-Aug-2014 19:58:32 UTC] PHP Fatal error:  Call to a member function getWorkersProbability() on a non-object in /Volumes/REPOS/MMS-BASE-PHP/tests/tests/Lamba/DistributorTest.php on line 137
+[01-Aug-2014 19:58:32 UTC] PHP Stack trace:
+[01-Aug-2014 19:58:32 UTC] PHP   1. {main}() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/phpunit:0
+[01-Aug-2014 19:58:32 UTC] PHP   2. PHPUnit_TextUI_Command::main() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/phpunit:55
+[01-Aug-2014 19:58:32 UTC] PHP   3. PHPUnit_TextUI_Command->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+[01-Aug-2014 19:58:32 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+[01-Aug-2014 19:58:32 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:426
+[01-Aug-2014 19:58:32 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestSuite.php:675
+[01-Aug-2014 19:58:32 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestSuite.php:675
+[01-Aug-2014 19:58:32 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:758
+[01-Aug-2014 19:58:32 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestResult.php:686
+[01-Aug-2014 19:58:32 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:822
+[01-Aug-2014 19:58:32 UTC] PHP  11. ReflectionMethod->invokeArgs() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:956
+[01-Aug-2014 19:58:32 UTC] PHP  12. MarketMeSuite\Lamba\DistributorTest->testGetWorkersProbability() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:956
+[05-Aug-2014 14:57:43 UTC] PHP Fatal error:  Uncaught exception 'MarketMeSuite\Phranken\Database\Mongo\Exception\MongoConnectionManagerException' with message 'could not connect to mongo server after '1' fallbacks' in /Volumes/REPOS/MMS-BASE-PHP/MarketMeSuite/Phranken/Database/Mongo/MongoConnectionManagerV2.php:120
+Stack trace:
+#0 /Volumes/REPOS/MMS-BASE-PHP/MarketMeSuite/Phranken/Database/Mongo/MongoConnectionManagerV2.php(134): MarketMeSuite\Phranken\Database\Mongo\MongoConnectionManagerV2->tryConnect(Array, 1)
+#1 /Volumes/REPOS/MMS-BASE-PHP/MarketMeSuite/Phranken/Database/Mongo/MongoConnectionManagerV2.php(75): MarketMeSuite\Phranken\Database\Mongo\MongoConnectionManagerV2->tryConnect(Array)
+#2 /Volumes/REPOS/MMS-BASE-PHP/MarketMeSuite/Phranken/Database/Mongo/MongoConnectionManagerV2.php(34): MarketMeSuite\Phranken\Database\Mongo\MongoConnectionManagerV2->configure('[?   {??  "user...')
+#3 /Volumes/REPOS/MMS-BASE-PHP/tests/autoload.php(31): MarketMeSuite\Phranken\Database\Mongo\MongoConnectionManagerV2->__construct('[?   {??  "user...')
+#4 /Volumes/R in /Volumes/REPOS/MMS-BASE-PHP/MarketMeSuite/Phranken/Database/Mongo/MongoConnectionManagerV2.php on line 120
+[05-Aug-2014 14:57:51 UTC] PHP Fatal error:  Uncaught exception 'MarketMeSuite\Phranken\Database\Mongo\Exception\MongoConnectionManagerException' with message 'could not connect to mongo server after '1' fallbacks' in /Volumes/REPOS/MMS-BASE-PHP/MarketMeSuite/Phranken/Database/Mongo/MongoConnectionManagerV2.php:120
+Stack trace:
+#0 /Volumes/REPOS/MMS-BASE-PHP/MarketMeSuite/Phranken/Database/Mongo/MongoConnectionManagerV2.php(134): MarketMeSuite\Phranken\Database\Mongo\MongoConnectionManagerV2->tryConnect(Array, 1)
+#1 /Volumes/REPOS/MMS-BASE-PHP/MarketMeSuite/Phranken/Database/Mongo/MongoConnectionManagerV2.php(75): MarketMeSuite\Phranken\Database\Mongo\MongoConnectionManagerV2->tryConnect(Array)
+#2 /Volumes/REPOS/MMS-BASE-PHP/MarketMeSuite/Phranken/Database/Mongo/MongoConnectionManagerV2.php(34): MarketMeSuite\Phranken\Database\Mongo\MongoConnectionManagerV2->configure('[?   {??  "user...')
+#3 /Volumes/REPOS/MMS-BASE-PHP/tests/autoload.php(31): MarketMeSuite\Phranken\Database\Mongo\MongoConnectionManagerV2->__construct('[?   {??  "user...')
+#4 /Volumes/R in /Volumes/REPOS/MMS-BASE-PHP/MarketMeSuite/Phranken/Database/Mongo/MongoConnectionManagerV2.php on line 120
+[05-Sep-2014 14:52:18 UTC] PHP Fatal error:  Cannot redeclare MarketMeSuite\Core\Augments\FeatureSwitchTest::testFeatureSwitchExists() in /Volumes/REPOS/MMS-BASE-PHP/tests/tests/Core/Augments/FeatureSwitchTest.php on line 139
+[05-Sep-2014 14:52:18 UTC] PHP Stack trace:
+[05-Sep-2014 14:52:18 UTC] PHP   1. {main}() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/phpunit:0
+[05-Sep-2014 14:52:18 UTC] PHP   2. PHPUnit_TextUI_Command::main() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/phpunit:55
+[05-Sep-2014 14:52:18 UTC] PHP   3. PHPUnit_TextUI_Command->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+[05-Sep-2014 14:52:18 UTC] PHP   4. PHPUnit_TextUI_Command->handleArguments() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/Command.php:141
+[05-Sep-2014 14:52:18 UTC] PHP   5. PHPUnit_Util_Configuration->getTestSuiteConfiguration() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/Command.php:683
+[05-Sep-2014 14:52:18 UTC] PHP   6. PHPUnit_Util_Configuration->getTestSuite() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Util/Configuration.php:829
+[05-Sep-2014 14:52:18 UTC] PHP   7. PHPUnit_Framework_TestSuite->addTestFiles() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Util/Configuration.php:916
+[05-Sep-2014 14:52:18 UTC] PHP   8. PHPUnit_Framework_TestSuite->addTestFile() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestSuite.php:411
+[05-Sep-2014 14:52:18 UTC] PHP   9. PHPUnit_Util_Fileloader::checkAndLoad() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestSuite.php:358
+[05-Sep-2014 14:52:18 UTC] PHP  10. PHPUnit_Util_Fileloader::load() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Util/Fileloader.php:77
+[09-Oct-2014 20:08:44 UTC] PHP Fatal error:  Cannot use object of type MarketMeSuite\Core\Objects\Profile as array in /Volumes/REPOS/MMS-BASE-PHP/MarketMeSuite/Lamba/Factory/FactoryJob.php on line 107
+[09-Oct-2014 20:08:44 UTC] PHP Stack trace:
+[09-Oct-2014 20:08:44 UTC] PHP   1. {main}() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/phpunit:0
+[09-Oct-2014 20:08:44 UTC] PHP   2. PHPUnit_TextUI_Command::main() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/phpunit:55
+[09-Oct-2014 20:08:44 UTC] PHP   3. PHPUnit_TextUI_Command->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+[09-Oct-2014 20:08:44 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+[09-Oct-2014 20:08:44 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:426
+[09-Oct-2014 20:08:44 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestSuite.php:699
+[09-Oct-2014 20:08:44 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestSuite.php:699
+[09-Oct-2014 20:08:44 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:760
+[09-Oct-2014 20:08:44 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestResult.php:686
+[09-Oct-2014 20:08:44 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:826
+[09-Oct-2014 20:08:44 UTC] PHP  11. ReflectionMethod->invokeArgs() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:962
+[09-Oct-2014 20:08:44 UTC] PHP  12. MarketMeSuite\Lamba\Factory\FactoryJobTest->testBuildJobSender() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:962
+[09-Oct-2014 20:08:44 UTC] PHP  13. MarketMeSuite\Lamba\Factory\FactoryJob->buildJobSender() /Volumes/REPOS/MMS-BASE-PHP/tests/tests/Lamba/Factory/FactoryJobTest.php:51
+[09-Oct-2014 20:12:31 UTC] PHP Fatal error:  Cannot use object of type MarketMeSuite\Core\Objects\Profile as array in /Volumes/REPOS/MMS-BASE-PHP/tests/tests/Lamba/Factory/FactoryJobTest.php on line 94
+[09-Oct-2014 20:12:31 UTC] PHP Stack trace:
+[09-Oct-2014 20:12:31 UTC] PHP   1. {main}() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/phpunit:0
+[09-Oct-2014 20:12:31 UTC] PHP   2. PHPUnit_TextUI_Command::main() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/phpunit:55
+[09-Oct-2014 20:12:31 UTC] PHP   3. PHPUnit_TextUI_Command->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+[09-Oct-2014 20:12:31 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+[09-Oct-2014 20:12:31 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:426
+[09-Oct-2014 20:12:31 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestSuite.php:699
+[09-Oct-2014 20:12:31 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestSuite.php:699
+[09-Oct-2014 20:12:31 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:760
+[09-Oct-2014 20:12:31 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestResult.php:686
+[09-Oct-2014 20:12:31 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:826
+[09-Oct-2014 20:12:31 UTC] PHP  11. ReflectionMethod->invokeArgs() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:962
+[09-Oct-2014 20:12:31 UTC] PHP  12. MarketMeSuite\Lamba\Factory\FactoryJobTest->testBuildJobSender() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:962
+[09-Oct-2014 20:13:23 UTC] PHP Fatal error:  Cannot use object of type MarketMeSuite\Core\Objects\Profile as array in /Volumes/REPOS/MMS-BASE-PHP/tests/tests/Lamba/Factory/FactoryJobTest.php on line 94
+[09-Oct-2014 20:13:23 UTC] PHP Stack trace:
+[09-Oct-2014 20:13:23 UTC] PHP   1. {main}() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/phpunit:0
+[09-Oct-2014 20:13:23 UTC] PHP   2. PHPUnit_TextUI_Command::main() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/phpunit:55
+[09-Oct-2014 20:13:23 UTC] PHP   3. PHPUnit_TextUI_Command->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+[09-Oct-2014 20:13:23 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+[09-Oct-2014 20:13:23 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:426
+[09-Oct-2014 20:13:23 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestSuite.php:699
+[09-Oct-2014 20:13:23 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestSuite.php:699
+[09-Oct-2014 20:13:23 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:760
+[09-Oct-2014 20:13:23 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestResult.php:686
+[09-Oct-2014 20:13:23 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:826
+[09-Oct-2014 20:13:23 UTC] PHP  11. ReflectionMethod->invokeArgs() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:962
+[09-Oct-2014 20:13:23 UTC] PHP  12. MarketMeSuite\Lamba\Factory\FactoryJobTest->testBuildJobSender() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:962
+[09-Oct-2014 20:15:00 UTC] PHP Fatal error:  Cannot use object of type MarketMeSuite\Core\Objects\Profile as array in /Volumes/REPOS/MMS-BASE-PHP/tests/tests/Lamba/Factory/FactoryJobTest.php on line 96
+[09-Oct-2014 20:15:00 UTC] PHP Stack trace:
+[09-Oct-2014 20:15:00 UTC] PHP   1. {main}() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/phpunit:0
+[09-Oct-2014 20:15:00 UTC] PHP   2. PHPUnit_TextUI_Command::main() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/phpunit:55
+[09-Oct-2014 20:15:00 UTC] PHP   3. PHPUnit_TextUI_Command->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+[09-Oct-2014 20:15:00 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+[09-Oct-2014 20:15:00 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:426
+[09-Oct-2014 20:15:00 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestSuite.php:699
+[09-Oct-2014 20:15:00 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestSuite.php:699
+[09-Oct-2014 20:15:00 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:760
+[09-Oct-2014 20:15:00 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestResult.php:686
+[09-Oct-2014 20:15:00 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:826
+[09-Oct-2014 20:15:00 UTC] PHP  11. ReflectionMethod->invokeArgs() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:962
+[09-Oct-2014 20:15:00 UTC] PHP  12. MarketMeSuite\Lamba\Factory\FactoryJobTest->testBuildJobSender() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:962
+[10-Oct-2014 16:43:06 UTC] PHP Fatal error:  Call to private method MarketMeSuite\Factory\ObjectFactory::checkInt() from context 'MarketMeSuite\Factory\ObjectFactoryTest' in /Volumes/REPOS/MMS-BASE-PHP/tests/tests/Factory/ObjectFactoryTest.php on line 827
+[10-Oct-2014 16:43:06 UTC] PHP Stack trace:
+[10-Oct-2014 16:43:06 UTC] PHP   1. {main}() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/phpunit:0
+[10-Oct-2014 16:43:06 UTC] PHP   2. PHPUnit_TextUI_Command::main() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/phpunit:55
+[10-Oct-2014 16:43:06 UTC] PHP   3. PHPUnit_TextUI_Command->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+[10-Oct-2014 16:43:06 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+[10-Oct-2014 16:43:06 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:426
+[10-Oct-2014 16:43:06 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestSuite.php:699
+[10-Oct-2014 16:43:06 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestSuite.php:699
+[10-Oct-2014 16:43:06 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:760
+[10-Oct-2014 16:43:06 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestResult.php:686
+[10-Oct-2014 16:43:06 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:826
+[10-Oct-2014 16:43:06 UTC] PHP  11. ReflectionMethod->invokeArgs() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:962
+[10-Oct-2014 16:43:06 UTC] PHP  12. MarketMeSuite\Factory\ObjectFactoryTest->testCheckInt() /Volumes/REPOS/MMS-BASE-PHP/vendor/phpunit/phpunit/src/Framework/TestCase.php:962

@@ -1,0 +1,12 @@
+{
+  "preCommit": [],
+  "commitMsg": {
+    "firstWordImperative": true,
+    "maxSummaryLength": 73,
+    "maxContentLength": 73,
+    "summaryIgnoreUrls": true,
+    "contentIgnoreUrls": true,
+    "lineAfterSummaryMustBeBlank": true,
+    "scripts": {}
+  }
+}

@@ -1,19 +1,19 @@
 {
-  "config": {
-    "scriptFolder" : "some path"
-  },
-  "preCommit": {
-
-  },
-  "commitMsg": {
-    "firstWordImperative": true,
-    "maxSummaryLength": 50,
-    "maxContentLength": 72,
-    "summaryIgnoreUrls": true,
-    "contentIgnoreUrls": true,
-    "lineAfterSummaryMustBeBlank": true,
-    "scripts": {
-      "after": ["chkSpelling.php"]
+    "preCommit": {},
+    "commitMsg": {
+        "firstWordImperative": true,
+        "maxSummaryLength": 50,
+        "maxContentLength": 72,
+        "summaryIgnoreUrls": true,
+        "contentIgnoreUrls": true,
+        "lineAfterSummaryMustBeBlank": true,
+        "scripts": {
+            "after": [
+                {
+                    "cmd": "runtests.sh",
+                    "passGitArgs": false
+                }
+            ]
+        }
     }
-  }
 }

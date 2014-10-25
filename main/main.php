@@ -1,3 +1,4 @@
+#!/usr/bin/env php
 <?php
 /**
  * Created by PhpStorm.
@@ -10,14 +11,15 @@ define('HOOKER_ROOT', dirname(dirname(__FILE__)));
 
 require HOOKER_ROOT . '/vendor/autoload.php';
 
-use MarketMeSuite\Phranken\Commandline\SimpleLog;
-use MarketMeSuite\Phranken\Commandline\CommandPrompt;
-use MarketMeSuite\Phranken\Spl\SplClassLoader;
-use MarketMeSuite\Phranken\Commandline\ArgUtils;
 use Bigtallbill\Hooker\Hooker;
+use Bigtallbill\Phranken\Commandline\ArgUtils;
+use Bigtallbill\Phranken\Commandline\CommandPrompt;
+use Bigtallbill\Phranken\Commandline\SimpleLog;
 
 // register local autoloader
-$loader = new SplClassLoader('Bigtallbill', HOOKER_ROOT . '/src');
+
+$loader = new \Composer\Autoload\ClassLoader();
+$loader->add('Bigtallbill', HOOKER_ROOT . '/src');
 $loader->register();
 
 $sLog = new SimpleLog();
@@ -47,12 +49,6 @@ switch ($command) {
 
 // get required args
 $repoRoot     = ArgUtils::getArgPair($argv, '-p', null, true);
-//$mode     = ArgUtils::getArgPair($argv, '-m', MCRYPT_MODE_CBC, true);
-//$hashAlgo = ArgUtils::getArgPair($argv, '-h', 'sha256', true);
-//$pass     = ArgUtils::getArgPair($argv, '-p', null, true);
-//$file     = ArgUtils::getArgPair($argv, '-f');
-
-
 $repoRoot = $repoRoot['-p'];
 
 // merge all of the arguments together for easy reference
@@ -66,16 +62,25 @@ $repoRoot = $repoRoot['-p'];
 switch ($command) {
     case 'install':
 
+
+        if ($repoRoot === null) {
+            $repoRoot = getcwd();
+        }
+
+        $sLog->log("using current working directory: $repoRoot");
+
         $hk = new Hooker(HOOKER_ROOT, $repoRoot);
         $hk->install();
 
         break;
     case 'execute':
+
         $hk = new Hooker(HOOKER_ROOT, getcwd());
 
         if (($out = $hk->execute($argv[2], $argv)) !== true) {
-            echo $out . PHP_EOL;
-            exit(1);
+            list($output, $exitCode) = $out;
+            echo $output . PHP_EOL;
+            exit($exitCode);
         }
 
         break;

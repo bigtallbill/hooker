@@ -12,7 +12,7 @@ namespace Bigtallbill\Hooker;
 
 class HookPreCommit extends Hook
 {
-    public function execute($argv, array $config)
+    public function execute($argv, array $config, $type)
     {
         return true;
     }

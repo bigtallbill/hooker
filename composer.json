@@ -9,10 +9,7 @@
       "email": "bigtallbill@gmail.com"
     }
   ],
-  "require": {
-    "MarketMeSuite/phranken-php": "@dev"
-  },
   "require-dev": {
-    "phpunit/phpunit": "4.1.*"
+    "phpunit/phpunit": "4.3.*"
   }
 }
