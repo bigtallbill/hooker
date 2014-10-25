@@ -10,7 +10,7 @@ class SimpleLog
 {
     /**
      * Accepts multiple arguments, each argument is printed with a newline
-     * at the end. Arrays and objects are pretty printed and any unkown 
+     * at the end. Arrays and objects are pretty printed and any unknown
      * type is coerced to a string and then printed.
      *
      * Booleans are converted to either 'true' or 'false' strings.
