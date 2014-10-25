@@ -9,17 +9,8 @@ Installation
 ------------
 
 1. Copy the binary release to a directory that is loaded by your PATH
-2. Make the file executable
-
-```
-chmod 0754 hooker
-```
-
-3. Check installation
-
-```
-which hooker
-```
+2. Make the file executable `chmod 0754 hooker`
+3. Check installation `which hooker`
 
 Usage
 -----
