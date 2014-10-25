@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/bigtallbill/hooker.svg?branch=master)](https://travis-ci.org/bigtallbill/hooker)
 
+[![Coverage Status](https://img.shields.io/coveralls/bigtallbill/hooker.svg)](https://coveralls.io/r/bigtallbill/hooker?branch=master)
+
 ![codeship](https://www.codeship.io/projects/68bf1230-ca93-0131-d192-5e68e7353a88/status)
 
 hooker
