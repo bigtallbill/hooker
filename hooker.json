@@ -1,5 +1,11 @@
 {
-    "preCommit": {},
+    "preCommit": {
+        "scripts": {
+            "after": [
+                {"cmd": "cd tests;./runtests.sh"}
+            ]
+        }
+    },
     "commitMsg": {
         "firstWordImperative": true,
         "maxSummaryLength": 50,
