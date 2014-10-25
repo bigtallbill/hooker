@@ -9,4 +9,4 @@ install:
 script:
   - cd tests;./runtests.sh
 after_script:
-  - php vendor/bin/coveralls
+  - cd ..;php vendor/bin/coveralls
