@@ -8,3 +8,5 @@ install:
   - composer update --prefer-source
 script:
   - cd tests;./runtests.sh
+after_script:
+  - php vendor/bin/coveralls
