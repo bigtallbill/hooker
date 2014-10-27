@@ -30,3 +30,4 @@ EOT;
 $phar->setStub($stub);
 
 chmod($buildRoot . "/$applicationName.phar", 0754);
+rename($buildRoot . "/$applicationName.phar", $buildRoot . "/$applicationName");
