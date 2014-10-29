@@ -42,6 +42,7 @@ abstract class Hook
         $typeKey = $this->transformHookNameToKey($type);
 
         if (isset($config[$typeKey]) && isset($config[$typeKey]['scripts']['after'])) {
+            $exitCode = 0;
             foreach ($config[$typeKey]['scripts']['after'] as $script) {
 
                 $cmd = '';
@@ -57,10 +58,11 @@ abstract class Hook
                 }
 
                 $out = '';
-                $exitCode = '';
                 exec($cmd, $out, $exitCode);
 
-                return array(implode(PHP_EOL, $out), $exitCode);
+                if ($exitCode !== 0) {
+                    return array(implode(PHP_EOL, $out), $exitCode);
+                }
             }
         }
 
