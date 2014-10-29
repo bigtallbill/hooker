@@ -38,7 +38,8 @@ class Hooker
 
     protected $hooks = array(
         'pre-commit',
-        'commit-msg'
+        'commit-msg',
+        'pre-push'
     );
 
     public function __construct($hookerRoot, $projectDir)

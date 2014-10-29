@@ -1,5 +1,6 @@
 {
     "preCommit": {},
+    "prePush": {},
     "commitMsg": {
         "firstWordImperative": true,
         "maxSummaryLength": 50,
