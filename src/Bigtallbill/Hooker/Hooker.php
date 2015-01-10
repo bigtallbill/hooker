@@ -146,7 +146,7 @@ class Hooker
      *
      * @return string
      */
-    protected function transformHookNameToClass($hookName)
+    public function transformHookNameToClass($hookName)
     {
         $parts = explode('-', $hookName);
         return 'Hook' . ucfirst($parts[0]) . ucfirst($parts[1]);
