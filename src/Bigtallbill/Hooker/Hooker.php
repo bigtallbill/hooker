@@ -17,9 +17,6 @@ class Hooker
     protected $hookerRoot;
 
     protected $defaultConfig = array(
-        'config' => array(
-            'scriptFolder' => 'some path',
-        ),
         'preCommit' => array(),
         'commitMsg' => array(
             'firstWordImperative' => true,
@@ -27,10 +24,7 @@ class Hooker
             'maxContentLength' => 72,
             'summaryIgnoreUrls' => true,
             'contentIgnoreUrls' => true,
-            'lineAfterSummaryMustBeBlank' => true,
-            'scripts' => array(
-                'after' => 'chkSpelling.php'
-            ),
+            'lineAfterSummaryMustBeBlank' => true
         ),
     );
 
