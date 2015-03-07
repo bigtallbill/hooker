@@ -31,9 +31,6 @@ class HookCommitMsgTest extends \PHPUnit_Framework_TestCase
     public function testExecuteGood()
     {
         $argv = array(
-            '',
-            '',
-            '',
             TEST_ASSETS_ROOT . '/commit-msg-good'
         );
 
@@ -111,9 +108,6 @@ class HookCommitMsgTest extends \PHPUnit_Framework_TestCase
     private function getBadConfig($messageFile)
     {
         return array(
-            '',
-            '',
-            '',
             TEST_ASSETS_ROOT . '/' . $messageFile
         );
     }

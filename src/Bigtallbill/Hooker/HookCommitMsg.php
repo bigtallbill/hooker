@@ -19,7 +19,7 @@ class HookCommitMsg extends Hook
         $firstWordImperative = $config['commitMsg']['firstWordImperative'];
         $lineAfterSummaryMustBeBlank = $config['commitMsg']['lineAfterSummaryMustBeBlank'];
 
-        $commitMsg = file_get_contents($argv[3]);
+        $commitMsg = file_get_contents($argv[0]);
 
         if (empty($commitMsg)) {
             return array('commit message cannot be empty', 1);
@@ -47,7 +47,7 @@ class HookCommitMsg extends Hook
 
         //------- CHECK LINE LENGTHS -------
 
-        $lines = file($argv[3]);
+        $lines = file($argv[0]);
 
         if (count($lines) >= 2 &&
             strlen(trim(preg_replace('/\s+/', ' ', $lines[1]))) !== 0 &&
