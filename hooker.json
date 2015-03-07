@@ -2,7 +2,7 @@
     "preCommit": {
         "scripts": {
             "after": [
-                {"cmd": "cd tests;./runtests.sh"}
+                {"cmd": "./runtests.sh"}
             ]
         }
     },
