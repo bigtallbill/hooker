@@ -16,7 +16,7 @@ class HookerTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->hooker = new Hooker(TEST_TMP_ROOT, TEST_TMP_ROOT);
+        $this->hooker = new Hooker(TEST_TMP_ROOT, TEST_TMP_ROOT, array('bleh'));
     }
 
     public function test_transformHookNameToClass()

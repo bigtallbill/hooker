@@ -10,6 +10,8 @@
 namespace Bigtallbill\Hooker;
 
 
+use Phar;
+
 class Hooker
 {
     protected $projectName;
@@ -36,11 +38,15 @@ class Hooker
         'pre-push'
     );
 
-    public function __construct($hookerRoot, $projectDir)
+    /** @var string The currently executing script */
+    protected $executingScript;
+
+    public function __construct($hookerRoot, $projectDir, $executingScript)
     {
         $this->assertDirectoryExists($projectDir);
         $this->projectDir = $projectDir;
         $this->hookerRoot = $hookerRoot;
+        $this->executingScript = $executingScript;
 
         if (file_exists($this->projectDir . DIRECTORY_SEPARATOR . 'hooker.json')) {
             $this->loadedConfig = json_decode(
@@ -112,7 +118,12 @@ class Hooker
 
     public function createHook($type, $append = false)
     {
-        $hookerPath = `which hooker`;
+        $apparentLocation = getcwd() . DIRECTORY_SEPARATOR . $this->executingScript;
+        if (file_exists($apparentLocation)) {
+            $hookerPath = $apparentLocation;
+        } else {
+            $hookerPath = `which hooker`;
+        }
 
         $hook = '';
         if (!$append) {

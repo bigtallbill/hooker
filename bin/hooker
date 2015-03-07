@@ -17,6 +17,6 @@ $loader->add('Bigtallbill', HOOKER_ROOT . '/src');
 $loader->register();
 
 $app = new \Symfony\Component\Console\Application('hooker');
-$app->add(new \Bigtallbill\Hooker\Commands\CommandInstall(HOOKER_ROOT));
-$app->add(new \Bigtallbill\Hooker\Commands\CommandExecute(HOOKER_ROOT));
+$app->add(new \Bigtallbill\Hooker\Commands\CommandInstall(HOOKER_ROOT, $argv[0]));
+$app->add(new \Bigtallbill\Hooker\Commands\CommandExecute(HOOKER_ROOT, $argv[0]));
 $app->run();

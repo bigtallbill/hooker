@@ -20,11 +20,15 @@ class CommandInstall extends Command
     /** @var null|string */
     protected $hookerRoot;
 
-    public function __construct($hookerRoot, $name = null)
+    /** @var string The script that is currently executing $argv[0] */
+    protected $callingScript;
+
+    public function __construct($hookerRoot, $callingScript, $name = null)
     {
         parent::__construct($name);
 
         $this->hookerRoot = $hookerRoot;
+        $this->callingScript = $callingScript;
     }
 
 
@@ -48,7 +52,7 @@ class CommandInstall extends Command
         $repoRoot = $input->getOption('repo-root');
         $output->writeln('installing into repository at "' . $repoRoot . '"');
 
-        $hooker = new Hooker($this->hookerRoot, $repoRoot);
+        $hooker = new Hooker($this->hookerRoot, $repoRoot, $this->callingScript);
         $hooker->install();
     }
 }

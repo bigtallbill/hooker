@@ -21,11 +21,15 @@ class CommandExecute extends Command
     /** @var null|string */
     protected $hookerRoot;
 
-    public function __construct($hookerRoot, $name = null)
+    /** @var string The script that is currently executing $argv[0] */
+    protected $callingScript;
+
+    public function __construct($hookerRoot, $callingScript, $name = null)
     {
         parent::__construct($name);
 
         $this->hookerRoot = $hookerRoot;
+        $this->callingScript = $callingScript;
     }
 
     protected function configure()
@@ -50,7 +54,7 @@ class CommandExecute extends Command
         $repoRoot = $input->getOption('repo-root');
         $output->writeln('Executing ' . $input->getArgument('type') . ' in "' . $repoRoot . '"');
 
-        $hooker = new Hooker($this->hookerRoot, $repoRoot);
+        $hooker = new Hooker($this->hookerRoot, $repoRoot, $this->callingScript);
         $out = $hooker->execute($input->getArgument('type'), $input->getArgument('git'));
         if ($out !== true) {
             list($text, $exitCode) = $out;
