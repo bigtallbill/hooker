@@ -1,6 +1,7 @@
 {
   "name": "bigtallbill/hooker",
   "description": "An extendable PHP commit hook",
+  "bin": ["bin/hooker"],
   "minimum-stability": "alpha",
   "license": "proprietary",
   "authors": [
