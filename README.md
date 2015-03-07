@@ -14,7 +14,7 @@ Installation
 
 1. Download binary https://github.com/bigtallbill/hooker/releases/tag/0.1.0
 2. Copy the binary release to a directory that is loaded by your PATH
-3. Make the file executable `chmod 0754 hooker`
+3. Make the file executable `chmod a+x hooker`
 4. Check installation `which hooker`
 
 Usage
