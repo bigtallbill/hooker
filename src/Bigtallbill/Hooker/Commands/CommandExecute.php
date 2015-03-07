@@ -55,7 +55,12 @@ class CommandExecute extends Command
         if ($out !== true) {
             list($text, $exitCode) = $out;
             $output->writeln($text);
-            exit($exitCode);
+
+            // symfony will use this return as the exit code
+            return $exitCode;
         }
+
+        // normal exit code
+        return 0;
     }
 }
