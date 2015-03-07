@@ -9,6 +9,10 @@
       "name": "*.php",
       "exclude": ["Tests"],
       "in": "vendor"
+    },
+    {
+      "name": "hooker-draft.json",
+      "in": "."
     }
   ],
   "git-version": "package_version",
