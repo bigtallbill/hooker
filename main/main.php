@@ -11,13 +11,7 @@ define('HOOKER_ROOT', dirname(dirname(__FILE__)));
 
 require HOOKER_ROOT . '/vendor/autoload.php';
 
-use Bigtallbill\Hooker\Hooker;
-use Bigtallbill\Phranken\Commandline\ArgUtils;
-use Bigtallbill\Phranken\Commandline\CommandPrompt;
-use Bigtallbill\Phranken\Commandline\SimpleLog;
-
 // register local autoloader
-
 $loader = new \Composer\Autoload\ClassLoader();
 $loader->add('Bigtallbill', HOOKER_ROOT . '/src');
 $loader->register();
