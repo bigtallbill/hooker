@@ -1,0 +1,18 @@
+{
+  "chmod": "0755",
+  "directories": [
+    "src",
+    "main"
+  ],
+  "finder": [
+    {
+      "name": "*.php",
+      "exclude": ["Tests"],
+      "in": "vendor"
+    }
+  ],
+  "git-version": "package_version",
+  "main": "bin/hooker",
+  "output": "build/hooker.phar",
+  "stub": true
+}
