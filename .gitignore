@@ -1,6 +1,5 @@
 .idea
 vendor
-composer.lock
 tests/report
 tests/build
 build/logs
