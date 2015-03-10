@@ -35,7 +35,21 @@ class Hooker
     protected $hooks = array(
         'pre-commit',
         'commit-msg',
-        'pre-push'
+        'pre-push',
+        'applypatch-msg',
+        'pre-applypatch',
+        'post-applypatch',
+        'prepare-commit-msg',
+        'post-commit',
+        'pre-rebase',
+        'post-checkout',
+        'post-merge',
+        'pre-receive',
+        'update',
+        'post-receive',
+        'post-update',
+        'pre-auto-gc',
+        'post-rewrite'
     );
 
     /** @var string The currently executing script */
@@ -147,8 +161,13 @@ class Hooker
     {
         $class = "Bigtallbill\\Hooker\\" . $this->transformHookNameToClass($type);
 
-        /** @var Hook $hook */
-        $hook = new $class;
+        if (!class_exists($class)) {
+            $hook = new HookUnknown();
+        } else {
+            /** @var Hook $hook */
+            $hook = new $class;
+        }
+
         return $hook->process($argv, $this->loadedConfig, $type);
     }
 

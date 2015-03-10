@@ -29,6 +29,7 @@ abstract class Hook
         if ($result !== true) {
             return $result;
         }
+
         $result = $this->executeAfter($argv, $config, $type);
         if ($result !== true) {
             return $result;
