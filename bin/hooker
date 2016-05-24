@@ -1,11 +1,5 @@
 #!/usr/bin/env php
 <?php
-/**
- * Created by PhpStorm.
- * User: bigtallbill
- * Date: 23/11/2013
- * Time: 20:57
- */
 
 define('HOOKER_ROOT', dirname(dirname(__FILE__)));
 
