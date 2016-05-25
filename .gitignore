@@ -1,5 +1,5 @@
+/report
 .idea
 vendor
 tests/report
-tests/build
 build/logs
