@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-vendor/bin/phpunit -c tests/unit.xml
+vendor/bin/phpunit
 
 exit $?
