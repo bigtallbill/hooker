@@ -9,6 +9,11 @@
     <php>
         <ini name="date.timezone" value="UTC"/>
     </php>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+    </filter>
     <testsuites>
         <testsuite name="everything">
             <directory>tests/tests/</directory>
