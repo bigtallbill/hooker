@@ -19,5 +19,4 @@
             <directory>tests/tests/</directory>
         </testsuite>
     </testsuites>
-    <filter/>
 </phpunit>
